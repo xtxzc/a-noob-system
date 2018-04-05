@@ -1,0 +1,229 @@
+/* Common styles */
+body {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  background: #392f59;
+  background-image: url(../img/banner.png);
+}
+
+.banner-wrapper {
+  height: 356px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-box {
+  color: #fff;
+}
+.banner-left {
+  position: relative;
+}
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+
+.clearfix:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* Film style */
+
+.film-img {
+  height: 300px;
+  width: 232px;
+  position: relative;
+  top: 60px;
+  border: 4px solid #fff;
+}
+
+.film-detail {
+  width: 250px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.film-detail li {
+  margin: 12px 0;
+  line-height: 100%;
+  list-style: none;
+}
+
+.action-btn {
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 120px;
+  height: 25px;
+  background-color: #756189;
+  margin-right: 10px;
+  padding-top: 11px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.action-btn:hover {
+  background-color: #7f51ae;
+}
+
+.btn-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-love {
+  background-image: url(../img/love.png);
+}
+
+.icon-rate {
+  background-image: url(../img/rate.png);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 380px;
+  margin-top: 70px;
+}
+
+.celebrity-container {
+  font-size: 16px;
+  color: #333;
+}
+
+.celebrity-group {
+  margin-bottom: 30px;
+}
+
+.celebrity-type {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #cb7373;
+  display: inline-block;
+}
+
+.celebrity-group .num {
+  line-height: 16px;
+  font-size: 14px;
+  color: #999;
+}
+
+.celebrity-list {
+  margin-left: 20px;
+}
+
+.celebrity-container .name {
+  margin-top: 8px;
+  line-height: 1.2;
+  color: #333;
+  text-decoration: none;
+}
+
+.celebrity-container .info {
+  padding-bottom: 8px;
+}
+
+.portrait-container {
+  margin-right: 20px;
+  float: left;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.portrait {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-list .main {
+  margin-left: 70px;
+}
+
+.comment-list .main-header {
+  position: relative;
+  font-size: 16px;
+}
+
+.comment-list .comment-content {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #666;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+/* Switcher style */
+.tab-title-container {
+  border-bottom: 2px solid #eee;
+}
+
+.tab-title {
+  cursor: pointer;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: -2px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  line-height: 100%;
+  border-bottom: 2px solid transparent;
+  user-select: none;
+}
+
+.tab-title:hover {
+  border-bottom: 2px solid red;
+  transition: border-color 0.4s linear;
+}
+
+.tab-title.active {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.tab-content-container {
+  padding-top: 20px;
+}
+
+.tab-content {
+  display: none;
+  width: 800px;
+}
+
+.tab-content.active {
+  display: block;
+}

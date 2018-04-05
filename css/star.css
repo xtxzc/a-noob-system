@@ -1,0 +1,38 @@
+.star{
+	border: 1px solid salmon;
+	width: auto;
+	height: auto;
+}
+
+.star 
+li,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+	font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+.show_number li {
+	width: 190px;
+}
+
+.atar_Show {
+	background: url(images/stark2.png);
+	width: 160px;
+	height: 21px;
+	position: relative;
+	float: left;
+}
+
+.atar_Show p {
+	background: url(images/stars2.png);
+	left: 0;
+	height: 21px;
+	width: 160px;
+}
+
+.show_number li span {
+	display: inline-block;
+	line-height: 21px;
+}

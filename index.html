@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Index</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+
+		<link rel="stylesheet" href="css/tab.css">
+		<script type="text/javascript" src="js/jquery.min.two.js"></script>
+
+		<link rel="stylesheet" href="css/star.css">
+		<script type="text/javascript" src="js/star/startScore.js"></script>
+		<script type="text/javascript" src="js/star/jquery-1.8.0.min.js.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<!--	<link rel="stylesheet" href="css/menu.css" />-->
+
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header-inner body-width">
+				<a href="#" class="logo"></a>
+				<div class="search" style="margin-left: 245px;">
+					<input type="text" class="search-text" placeholder="Seach movies...">
+					<button class="search-btn"><i class="icon-search"></i></button>
+				</div>
+				<nav class="header-nav">
+					<ul>
+						<li>
+							<span class="line"></span>
+							<a href="#" class="dreamer">清酒三两三</a>
+							<i class="icon-text__pink icon-new">new</i>
+						</li>
+						<li>
+							<span class="line"></span>
+							<a href="register.html" class="icon-text__pink register">注册</a>
+						</li>
+						<li>
+							<span class="line"></span>
+							<a href="login.html">登录</a>
+						</li>
+						<li>
+							<span class="line"></span>
+							<i class="icon-app"></i>
+							<a href="#" class="app">后台</a>
+							<i class="icon-arrow"></i>
+							<div class="app-hover">
+								<a href="#"></a>
+								<p>扫一扫下载手机客户端</p>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-shadow"></div>
+		</header>
+
+		<div class="main">
+
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$("#tab li").click(function() {
+						$("#tab li").eq($(this).index()).addClass("tabdown").siblings().removeClass("tabdown");
+					})
+				})
+			</script>
+
+			<div id="tab">
+				<ul style="font-size: 20px;font-weight: 600;">
+					<li class="tabdown" style="float: left;padding: 35px;margin-left: 430px;">
+						<a href="index.html">首页</a>
+					</li>
+					<li style="float: left; padding: 35px;">
+						<a href="movie.html" target="rightform">电影</a>
+					</li>
+					<li style="float: left;padding: 35px;">
+						<a href="cinema.html" target="rightform">影院</a>
+					</li>
+					<li style="float: left;padding: 35px;">
+						<a href="rank.html" target="rightform">榜单</a>
+					</li>
+					<li style="float: left;padding: 35px;">
+						<a href="movie.html" target="rightform">社区</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<iframe name="rightform" id="rightform" onload="this.height=rightform.document.body.scrollHeight;parent.document.getElementById('frame_content').style.height= document.body.scrollHeight + 'px';"
+			 frameborder="0" scrolling="no" width="100%"  src="index_iframe.html" style="margin-right: 3px;margin-top: -70px;"></iframe>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-link">
+					<div class="footer-link__item">
+						<h4 class="footer-title">关于我们</h4>
+						<ul class="footer-list">
+							<li class="item">
+								<a href="#">关于我们</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-link__item">
+						<h4 class="footer-title">手机应用</h4>
+						<ul class="footer-list">
+							<li class="item">
+								<a href="#">关于我们</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-link__item">
+						<div class="footer-orcode"><img src="images/app_qrcode.png" alt="#"></div>
+						<div class="orcode-text">
+							<p>扫描二维码</p>
+							<p>下载tang手机客户端</p>
+						</div>
+					</div>
+					<div class="footer-link__item">
+						<h4 class="footer-title">关注我们</h4>
+						<ul class="footer-list">
+							<li class="item">
+								<a href="#">关于我们</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-link__item">
+						<h4 class="footer-title">友情链接</h4>
+						<ul class="footer-list">
+							<li class="item">
+								<a href="#">关于我们</a>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class="fopter-copyright">
+					<p>Copyright &copy; 2018.Company name All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

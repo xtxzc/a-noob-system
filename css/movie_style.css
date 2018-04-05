@@ -1,0 +1,18 @@
+#movie_tabtop{
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	background: #CFD0D1;
+	opacity:0.8;
+	text-decoration: none;
+	margin-top: -45px;
+}
+
+
+#movie_tabtop ul li a:hover {
+	color: #666666;
+}
+
+.moivetop a {
+	color: #ff0000;
+}

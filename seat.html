@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/seat.css">
+  <title>Seat</title>
+</head>
+
+<body>
+  <div class="container" style="margin-top: 100px;" >
+    <div class="order-progress-bar" style="margin-left: -50px;">
+      <div class="step first done">
+        <span class="step-num">1</span>
+        <div class="bar"></div>
+        <span class="step-text">选择影片场次</span>
+      </div>
+      <div class="step done">
+        <span class="step-num">2</span>
+        <div class="bar"></div>
+        <span class="step-text">选择座位</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="bar"></div>
+        <span class="step-text">14分钟内付款</span>
+      </div>
+      <div class="step last">
+        <span class="step-num">4</span>
+        <div class="bar"></div>
+        <span class="step-text">影院取票观影</span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="hall">
+        <div class="seat-example">
+          <div class="selectable-example example">
+            <span>可选座位</span>
+          </div>
+          <div class="sold-example example">
+            <span>已售座位</span>
+          </div>
+          <div class="selected-example example">
+            <span>已选座位</span>
+          </div>
+          <div class="couple-example example">
+            <span>情侣座位</span>
+          </div>
+        </div>
+        <div class="seats-block" data-cols="12" data-section-id="0000000000000001" data-section-name="普通区" data-seq-no="201803270001759">
+          <div class="row-id-container">
+            <span class="row-id">1</span>
+            <span class="row-id">2</span>
+            <span class="row-id">3</span>
+            <span class="row-id">4</span>
+            <span class="row-id">5</span>
+            <span class="row-id">6</span>
+            <span class="row-id">7</span>
+            <span class="row-id">8</span>
+            <span class="row-id">9</span>
+            <span class="row-id">10</span>
+          </div>
+
+          <div class="seats-container">
+            <div class="screen-container" style="left: 0px;">
+              <div class="screen">银幕中央</div>
+              <div class="c-screen-line"></div>
+            </div>
+            <div class="seats-wrapper"></div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="side">
+        <div class="movie-info clearfix">
+          <div class="poster">
+            <img src="http://p1.meituan.net/movie/a08e257b4d2d4aaed7ddb96fe2fc64211676721.jpg@115w_158h_1e_1c">
+          </div>
+          <div class="content">
+            <p class="name text-ellipsis">古墓丽影：源起之战</p>
+            <div class="info-item">
+              <span>类型 :</span>
+              <span class="value">动作,冒险</span>
+            </div>
+            <div class="info-item">
+              <span>时长 :</span>
+              <span class="value">118分钟</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="show-info">
+          <div class="info-item">
+            <span>影院 :</span>
+            <span class="value text-ellipsis">烽禾影城(祈福新邨店)</span>
+          </div>
+          <div class="info-item">
+            <span>影厅 :</span>
+            <span class="value text-ellipsis">1号厅</span>
+          </div>
+          <div class="info-item">
+            <span>版本 :</span>
+            <span class="value text-ellipsis">英语3D</span>
+          </div>
+          <div class="info-item">
+            <span>场次 :</span>
+            <span class="value text-ellipsis screen">今天 3月27 13:00</span>
+          </div>
+          <div class="info-item">
+            <span>票价 :</span>
+            <span class="value text-ellipsis">￥31/张</span>
+          </div>
+        </div>
+
+        <div class="ticket-info">
+          <div class="no-ticket" style="display: block;">
+            <p class="buy-limit">座位：一次最多选6个座位</p>
+            <p class="no-selected">请
+              <span>点击左侧</span>座位图选择座位</p>
+          </div>
+          <div class="has-ticket" style="display: none;">
+            <span class="text">座位：</span>
+            <div class="ticket-container" data-limit="6">
+            </div>
+          </div>
+
+          <div class="total-price">
+            <span>总价 :</span>
+            <span class="price">0</span>
+          </div>
+        </div>
+
+        <div class="confirm-order">
+          <div class="confirm-btn" data-act="confirm-click" data-bid="b_0a0ep6pp"><a href="pay.html">确认选座</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/seat.js"></script>
+</body>
+
+</html>
